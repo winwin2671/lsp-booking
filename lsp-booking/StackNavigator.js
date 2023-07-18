@@ -10,7 +10,20 @@ const StackNavigator = () => {
   function BottomTab() {
     return (
       <Tab.Navigator>
-        <Tab.Screen name="Home" />
+        <Tab.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{
+            tabBarLabel: 'Home',
+            headerShown: false,
+            tabBarIcon: ({ focused }) =>
+              focused ? (
+                <Entypo name="home" size={24} color="black" />
+              ) : (
+                <AntDesign name="home" size={24} color="black" />
+              ),
+          }}
+        />
       </Tab.Navigator>
     )
   }
