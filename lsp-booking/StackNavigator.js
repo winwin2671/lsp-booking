@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-
+import { AntDesign } from '@expo/vector-icons'
 const StackNavigator = () => {
   const Tab = createBottomTabNavigator()
   const Stack = createNativeStackNavigator()
